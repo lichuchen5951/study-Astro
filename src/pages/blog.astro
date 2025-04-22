@@ -1,5 +1,7 @@
 ---
+import "../styles/global.css";
 
+const pageTitle: string = "博客页";
 ---
 
 <html lang="en">
@@ -8,10 +10,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>This is Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>这是个博客页面</h1>
+    <h1>这是个{pageTitle}面</h1>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
@@ -22,7 +24,10 @@
       alt=""
     />
     <ul>
-      <li><a href="/post/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-1/">文章 1</a></li>
+      <li><a href="/posts/post-2/">文章 2</a></li>
+      <li><a href="/posts/post-3/">文章 3</a></li>
+      <li><a href="/posts/post-4/">文章 4</a></li>
     </ul>
   </body>
 </html>
