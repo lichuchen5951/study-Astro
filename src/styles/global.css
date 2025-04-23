@@ -80,3 +80,13 @@ h1 {
     display: none;
   }
 }
+
+/* 黑夜模式 */
+html.dark {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
